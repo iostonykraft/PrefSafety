@@ -1,0 +1,10 @@
+Package: com.tonykraft.prefsafety
+Name: PrefSafety
+Depends: mobilesubstrate
+Architecture: iphoneos-arm
+Description: Disables Erase Content And Settings, Reset Settings, Software Update panel, and Settings badge. Preference panel coming soon.
+Maintainer: Tony Kraft
+Author: Tony Kraft
+Section: Tweaks
+Version: 1.0.1-1
+Installed-Size: 92
