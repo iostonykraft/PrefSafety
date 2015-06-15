@@ -15,11 +15,11 @@
 %hook SBSoftwareUpdateController
 
 - (BOOL)_isSettingsBadgedForSoftwareUpdate {
-	return NO; 
+	return FALSE; 
 }
 
 - (BOOL)_toggleSettingsBadge {
-	return NO; 
+	return FALSE; 
 }
 
 %end
@@ -27,15 +27,15 @@
 %hook ResetPrefController
 
 - (void)popupViewDidAppear:(BOOL)arg1 {
-	%orig(FALSE);
+	NO;
 }
 
 - (void)eraseSettings:(id)arg1 {
-	%orig(NULL);
+	NO;
 }
 
 - (void)eraseSettingsAndContent:(id)arg1 {
-	%orig(NULL);
+	NO;
 }
 
 - (void)confirmationSpecifierConfirmed:(id)arg1 {
@@ -43,7 +43,7 @@
 }
 
 - (void)didAcceptEnteredPIN:(id)arg1 {
-	%orig(NULL); 
+	NO; 
 }
 
 %end
